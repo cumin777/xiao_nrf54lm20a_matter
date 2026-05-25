@@ -115,22 +115,23 @@ Copy from `light_switch/sysbuild/mcuboot/boards/xiao_nrf54lm20a_nrf54lm20a_cpuap
 
 ### Step 1: Basic samples (no PWM needed)
 Create the 5 files listed above for these 7 samples:
-- [ ] contact_sensor
-- [ ] lock
-- [ ] manufacturer_specific
-- [ ] smoke_co_alarm
-- [ ] temperature_sensor
-- [ ] template
-- [ ] thermostat
+- [x] contact_sensor
+- [x] lock
+- [x] manufacturer_specific
+- [x] smoke_co_alarm
+- [x] temperature_sensor
+- [x] template
+- [x] thermostat
 
 ### Step 2: PWM samples
 Create the 5 files (with PWM overlay additions) for these 3 samples:
-- [ ] closure (1x PWM LED)
-- [ ] light_bulb (1x PWM LED)
-- [ ] window_covering (2x PWM LED)
+- [x] closure (1x PWM LED)
+- [x] light_bulb (1x PWM LED)
+- [x] window_covering (2x PWM LED)
 
 ### Step 3: Verify light_switch Kconfig.sysbuild already covers XIAO
-- [ ] Confirm `BOARD_XIAO_NRF54LM20A` is present in all samples' Kconfig.sysbuild (currently only `light_switch/Kconfig.sysbuild:64` has it)
+- [x] Confirm `BOARD_XIAO_NRF54LM20A` is present in all samples' Kconfig.sysbuild (currently only `light_switch/Kconfig.sysbuild:64` has it)
+- [x] Added `BOARD_XIAO_NRF54LM20A` to all 10 remaining samples' Kconfig.sysbuild
 
 ### Step 4: Build verification
 - [ ] Attempt build for each sample targeting `xiao_nrf54lm20a_nrf54lm20a_cpuapp`
@@ -155,7 +156,17 @@ All development in this project **must** follow the SuperMCP development specifi
 | Date | Sample | Action | Status |
 |------|--------|--------|--------|
 | 2025-05-25 | light_switch | Already adapted (reference implementation) | Done |
-| | | | |
+| 2025-05-25 | contact_sensor | Board files created (5 files), committed | Done |
+| 2025-05-25 | lock | Board files created (5 files), committed | Done |
+| 2025-05-25 | manufacturer_specific | Board files created (5 files), committed | Done |
+| 2025-05-25 | smoke_co_alarm | Board files created (5 files), committed | Done |
+| 2025-05-25 | temperature_sensor | Board files created (5 files), committed | Done |
+| 2025-05-25 | template | Board files created (5 files), committed | Done |
+| 2025-05-25 | thermostat | Board files created (5 files), committed | Done |
+| 2025-05-25 | closure | Board files created (5 files), committed | Done |
+| 2025-05-25 | light_bulb | Board files created (5 files), committed | Done |
+| 2025-05-25 | window_covering | Board files created (5 files), committed | Done |
+| 2025-05-25 | All samples | Added BOARD_XIAO_NRF54LM20A to Kconfig.sysbuild (10 files) | Done |
 
 ---
 
