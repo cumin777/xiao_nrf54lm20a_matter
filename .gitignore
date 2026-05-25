@@ -1,0 +1,28 @@
+# Build output directories
+build/
+
+# Compiled binaries and firmware
+*.hex
+*.bin
+*.elf
+*.map
+*.ota
+
+# Object files
+*.o
+*.obj
+
+# CMake build files
+CMakeCache.txt
+CMakeCache.txt.tmp
+CMakeFiles/
+build.ninja
+cmake_install.cmake
+compile_commands.json
+
+# Ninja build logs
+.ninja_log
+.ninja_deps
+
+# DFU/OTA packages
+*.zip
