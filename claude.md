@@ -134,7 +134,10 @@ Create the 5 files (with PWM overlay additions) for these 3 samples:
 - [x] Added `BOARD_XIAO_NRF54LM20A` to all 10 remaining samples' Kconfig.sysbuild
 
 ### Step 4: Build verification
-- [ ] Attempt build for each sample targeting `xiao_nrf54lm20a_nrf54lm20a_cpuapp`
+- [x] Board recognition verified for all 10 samples (cmake configure passes board discovery)
+- [ ] Full build requires Matter SDK pre-build (`chip_codegen.cmake` not generated yet)
+- Note: In Zephyr v4 (nCS v3.2.1), board target format is `xiao_nrf54lm20a/nrf54lm20a/cpuapp`
+  (slash-separated), but overlay/conf filenames remain underscore-format `xiao_nrf54lm20a_nrf54lm20a_cpuapp`
 
 ---
 
