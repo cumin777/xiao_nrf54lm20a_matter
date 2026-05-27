@@ -69,6 +69,6 @@ endif # BOOTLOADER_MCUBOOT
 
 #### Enable generating factory data
 config MATTER_FACTORY_DATA_GENERATE
-	default y
+	default y if !BOARD_XIAO_NRF54LM20A
 
 source "share/sysbuild/Kconfig"

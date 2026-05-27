@@ -94,6 +94,6 @@ endif # WIFI_NRF70
 
 #### Enable generating factory data
 config MATTER_FACTORY_DATA_GENERATE
-	default y
+	default y if !BOARD_XIAO_NRF54LM20A
 
 source "$(ZEPHYR_BASE)/share/sysbuild/Kconfig"

@@ -86,6 +86,6 @@ endif # SOC_SERIES_NRF53X
 
 #### Enable generating factory data
 config MATTER_FACTORY_DATA_GENERATE
-	default y if !BOARD_NRF21540DK
+	default y if !BOARD_NRF21540DK && !BOARD_XIAO_NRF54LM20A
 
 source "share/sysbuild/Kconfig"
